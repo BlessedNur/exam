@@ -1,0 +1,212 @@
+.form form {
+  background: white;
+  width: 28em;
+  /* box-shadow: 0 0 40px 5px black; */
+  border-radius: 5px;
+  padding: 2.5em;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: inherit;
+  /* border: 2px solid black; */
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.468);
+}
+.form {
+  padding: 3em;
+}
+
+.header-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em 0;
+  /* justify-content: flex-start; */
+  /* margin-left: -5.3em; */
+}
+
+.form h2 {
+  color: #fab005;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-variant: small-caps;
+}
+
+.form h1 {
+  margin: 0;
+  color: #183153;
+  font-size: 25px;
+}
+
+.header-form p {
+  margin: 0;
+  font-size: 16px;
+  color: #183153;
+  font-weight: 600;
+  line-height: 24px;
+  /* white-space: nowrap; */
+}
+
+.p-two,
+.p-one {
+  position: relative;
+  svg {
+    transform: translateY(4px) !important;
+  }
+}
+
+.p-two svg,
+.p-one svg {
+  position: absolute;
+  top: 3.1em;
+  left: 1.5em;
+  cursor: text;
+}
+
+.form fieldset {
+  border: none;
+  padding: 0.5em 0;
+}
+
+.form fieldset label {
+  /* font-family: 'cera-thin'; */
+  /* font-weight: 600; */
+  color: #183153;
+}
+
+.form fieldset p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 2em;
+}
+
+.form ::placeholder {
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+.form fieldset #Email,
+.form #Password {
+  padding: 1.3em;
+  border-radius: 10px;
+  padding-left: 3.6em;
+  padding-bottom: 1.4em;
+  outline: none;
+  border: 2px solid #183153ce;
+  outline-offset: 1px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form #Password {
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.form #Email:focus,
+.form #Password:focus {
+  outline: 3px solid rgb(113, 185, 248);
+}
+
+.remember p {
+  display: flex;
+  flex-direction: row;
+  gap: 0 0.7em;
+}
+
+.remember p:first-child a:focus .focus-rem {
+  visibility: visible;
+}
+#password::placeholder{
+  transform: translateY(10px) !important;
+}
+.remember p:first-child a {
+  color: #183153;
+  position: relative;
+  cursor: default;
+}
+
+figcaption a:hover,
+.remember p:last-child a:hover {
+  color: rgb(113, 185, 248);
+}
+
+figcaption a,
+.remember p:last-child a {
+  color: #5363be;
+  text-decoration: underline dotted 1px;
+  transition: 0.1s;
+}
+
+.focus-rem {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.remember p:first-child input {
+}
+
+.remember label {
+  font-weight: 900;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+}
+.form button:hover {
+  background-color: #fab005;
+}
+.form button {
+  align-items: center;
+  background: #ffd43b;
+  border: 2px solid #183153;
+  border-bottom: 8px solid #183153;
+  border-radius: 10px;
+  color: #183153;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 0 0.9em;
+  justify-content: center;
+  margin-top: 1.7em;
+  padding: 1.05em;
+  width: 100%;
+}
+
+.form button svg {
+  transform: translateY(10px);
+}
+
+.form figcaption {
+  width: fit-content;
+  margin: 2em auto;
+}
+.error {
+  position: absolute;
+  font-weight: 700;
+  color: red;
+}
+.nav-two {
+  background-color: black;
+  .sign-up {
+    padding: 0.5em 1em !important;
+    border-radius: 4px;
+    border: none;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 1em;
+    width: fit-content;
+    cursor: pointer;
+    /* color: black !important; */
+    transform: translateY(-8px);
+    background-color: #e5a00d;
+  }
+  ul{
+    gap: 3em;
+  }
+}
