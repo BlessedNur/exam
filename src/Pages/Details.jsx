@@ -10,6 +10,7 @@ export default function Details() {
     selectProduct,
     setSelectProduct,
   ] = useContext(formContext);
+  localStorage.setItem("details", JSON.stringify(selectProduct));
 
   function stars() {
     const rating = document.querySelectorAll(".rating");
@@ -23,13 +24,15 @@ export default function Details() {
 
   return (
     <>
+      
+      
       <NavTwo />
-      <div style={{ height: "120vh" }}>
+      <div style={{ height: "88vh" }}>
         {
           <div
             key={selectProduct.id}
             data-aos="fade-up"
-            class="product"
+            class="product detail-pro"
             style={{ border: "none" }}
           >
             <p class="category">{selectProduct.category}</p>
@@ -45,7 +48,7 @@ export default function Details() {
                 ${stars()}
               </div>
               <div class="description">
-                {selectProduct.description.slice(0, 100)}....
+                {selectProduct.description}....
               </div>
               <div class="price">${selectProduct.price.toFixed(2)}</div>
             </div>

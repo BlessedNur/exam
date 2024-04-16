@@ -8,7 +8,7 @@
   border: 2px solid #d3d6dc;
   border-radius: 5px;
   position: relative;
-  padding: .5em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -25,76 +25,76 @@
   margin: 0 auto;
   height: 100%;
 }
-.product:nth-child(5){
+.product:nth-child(5) {
   grid-column: span 2;
-  display:  flex;
+  display: flex;
   flex-direction: row !important;
   align-items: center;
-  .category{
+  .category {
     /* color: red; */
     top: 10px;
     left: 10px;
-    position:absolute;
+    position: absolute;
   }
-  button{
+  button {
     position: absolute;
     right: 10px;
     bottom: 10px;
   }
 }
-.product:nth-child(10){
+.product:nth-child(10) {
   grid-column: span 2;
-  display:  flex;
+  display: flex;
   flex-direction: row-reverse !important;
   align-items: center;
-  .category{
+  .category {
     /* color: red; */
     top: 10px;
     left: 10px;
-    position:absolute;
+    position: absolute;
   }
-  button{
+  button {
     position: absolute;
     left: 10px;
     bottom: 10px;
   }
 }
-.product:nth-child(17){
+.product:nth-child(17) {
   grid-column: span 2;
-  display:  flex;
+  display: flex;
   flex-direction: row-reverse !important;
   align-items: center;
-  .category{
+  .category {
     /* color: red; */
     top: 10px;
     left: 10px;
-    position:absolute;
+    position: absolute;
   }
-  button{
+  button {
     position: absolute;
     left: 10px;
     bottom: 10px;
   }
 }
-.product:nth-child(12){
+.product:nth-child(12) {
   grid-column: span 3;
-  display:  flex;
+  display: flex;
   flex-direction: row-reverse !important;
   align-items: center;
-  .category{
+  .category {
     /* color: red; */
     top: 10px;
     left: 10px;
-    position:absolute;
+    position: absolute;
   }
-  button{
+  button {
     position: absolute;
     left: 10px;
     bottom: 10px;
   }
 }
 
-.category{
+.category {
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -111,7 +111,7 @@
   cursor: pointer;
   background-color: #e5a00d;
 }
-.sign-out{
+.sign-out {
   padding: 0.5em 1em !important;
   border-radius: 4px;
   border: none;
@@ -125,10 +125,34 @@
   transform: translateY(-8px);
   background-color: #e5a00d;
 }
-.product button:hover{
+.product button:hover {
   background-color: black;
   color: white;
 }
-.fa-star{
+.fa-star {
   color: gold;
+}
+.detail-pro {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  position: relative;
+  button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  .price{
+    font-weight: 800;
+    /* font */
+  }
+
+  .category{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
 }

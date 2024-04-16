@@ -60,7 +60,7 @@ export default function Home() {
                 data-product-id="${product.id}"
                 onClick={() => naviagte("/details")}
               >
-                Add to basket
+                View Details
               </button>
             </div>
           );
