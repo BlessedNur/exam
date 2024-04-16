@@ -40,15 +40,15 @@ export default function Details() {
               <img src={selectProduct.image} alt="" />
             </div>
             <div class="desc">
-              <h3 class="title">{selectProduct.title}...</h3>
+              <h3 class="title">{selectProduct.title}</h3>
               <div
                 class="rating"
                 data-product-rating={selectProduct.rating.rate}
               >
-                ${stars()}
+                {stars()}
               </div>
               <div class="description">
-                {selectProduct.description}....
+                {selectProduct.description}
               </div>
               <div class="price">${selectProduct.price.toFixed(2)}</div>
             </div>

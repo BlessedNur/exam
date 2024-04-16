@@ -144,6 +144,7 @@
   }
   h3{
     font-size: 30px;
+    margin-bottom: 1em;
   }
   .price{
     font-weight: 800;
@@ -154,5 +155,8 @@
     position: absolute;
     top: 10px;
     left: 10px;
+  }
+  .description{
+    width: 80%;
   }
 }
