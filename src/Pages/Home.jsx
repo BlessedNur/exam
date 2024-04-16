@@ -14,6 +14,8 @@ export default function Home() {
     selectProduct,
     setSelectProduct,
   ] = useContext(formContext);
+
+  localStorage.setItem("user", currentUser)
   function stars() {
     const rating = document.querySelectorAll(".rating");
     rating.forEach((rate) => {

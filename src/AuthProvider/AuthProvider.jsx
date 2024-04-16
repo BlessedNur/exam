@@ -3,7 +3,7 @@ export const formContext = createContext();
 
 export default function AuthProvider({ children }) {
   const [products, setProducts] = useState([]);
-  const [currentUser, setCurrentUser] = useState("");
+  const [currentUser, setCurrentUser] = useState(localStorage.getItem("user")||"")
   const [selectProduct, setSelectProduct] = useState(
     JSON.parse(localStorage.getItem("products")) || []
   );
