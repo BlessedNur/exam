@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { formContext } from "../AuthProvider/AuthProvider";
 import NavTwo from "../Components/NavTwo";
+import Footer from "../Components/Navbar/Footer";
 
 export default function Details() {
   const [
@@ -27,7 +28,7 @@ export default function Details() {
       
       
       <NavTwo />
-      <div style={{ height: "88vh" }}>
+      <div style={{ height: "95vh" }} className="hold-details">
         {
           <div
             key={selectProduct.id}
@@ -56,6 +57,8 @@ export default function Details() {
           </div>
         }
       </div>
+      <Footer />
+
     </>
   );
 }

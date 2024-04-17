@@ -5,6 +5,7 @@ import { users } from "../database/Users";
 import { formContext } from "../AuthProvider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import NavTwo from "../Components/NavTwo";
+// import Footer from "../Components/Navbar/Footer";
 export default function Login() {
   const [product, currentUser, setCurrentUser] = useContext(formContext);
   const navigate = useNavigate();
@@ -109,6 +110,8 @@ export default function Login() {
           </fieldset>
         </form>
       </section>
+      <Footer />
+
     </>
   );
 }

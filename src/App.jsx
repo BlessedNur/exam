@@ -18,7 +18,6 @@ function App() {
 
         </Routes>
       </AuthProvider>
-      <Footer />
     </Router>
   );
 }

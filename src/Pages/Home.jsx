@@ -4,6 +4,7 @@ import { formContext } from "../AuthProvider/AuthProvider";
 import "./Home.css";
 import Header from "../Components/Navbar/Header";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Components/Navbar/Footer";
 
 export default function Home() {
   const naviagte = useNavigate(); // const [delay, setDelay] = useState(100);
@@ -68,6 +69,8 @@ export default function Home() {
           );
         })}
       </section>
+      <Footer />
+      
     </>
   );
 }

@@ -9,9 +9,13 @@
   font-family: inherit;
   /* border: 2px solid black; */
   box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.468);
+  height: fit-content;
+
 }
 .form {
-  padding: 3em;
+  padding: 0.5em;
+  display: grid;
+ place-content: center;
 }
 
 .header-form {
@@ -118,7 +122,7 @@
 .remember p:first-child a:focus .focus-rem {
   visibility: visible;
 }
-#password::placeholder{
+#password::placeholder {
   transform: translateY(10px) !important;
 }
 .remember p:first-child a {
@@ -206,7 +210,7 @@ figcaption a,
     transform: translateY(-8px);
     background-color: #e5a00d;
   }
-  ul{
+  ul {
     gap: 3em;
   }
 }
